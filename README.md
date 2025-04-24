@@ -59,10 +59,6 @@ A Nuvem Azure oferece um conjunto abrangente de benefícios que podem impulsiona
 * **Documentação do GitHub:** [Link para o guia completo para uso do GitHub](coloque o link aqui)
 * **GitHub Markdown:** [Link para o guia específico para Markdown no GitHub](coloque o link aqui)
 
-## Capturas de Tela (Opcional)
-
-[Se você adicionou capturas de tela na pasta `/images`, descreva aqui o que elas ilustram. Exemplo: A pasta `/images` contém capturas de tela do Azure Portal mostrando a criação de um grupo de recursos e a seleção do sistema operacional para a máquina virtual.]
-
 ---
 
 Este é um resumo da minha compreensão sobre os benefícios da Nuvem Azure, adquirido durante o desafio proposto pela DIO. Espero que seja útil como material de apoio para estudos futuros.
