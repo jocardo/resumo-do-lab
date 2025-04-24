@@ -157,6 +157,68 @@ O gerenciamento de permissões dentro do grupo de recursos é fundamental para a
 
 A criação de um grupo de recursos é a base para a implantação de outros serviços, como redes virtuais. O portal do Azure oferece uma interface intuitiva para essa criação. Além disso, a possibilidade de baixar modelos de automação facilita a implantação consistente de recursos em larga escala.
 
+# Desafio: Criando e Configurando Máquinas Virtuais no Azure
+
+## Entendendo o Desafio
+
+Este laboratório prático focou na criação e configuração de máquinas virtuais (VMs) dentro do Microsoft Azure, explorando os conceitos fundamentais de computação em nuvem e serviços de rede associados. O objetivo principal foi praticar o processo de provisionamento e configuração de VMs, compreendendo as diversas opções e considerações envolvidas.
+
+## Objetivos de Aprendizagem
+
+Ao concluir este desafio, fui capaz de:
+
+* Compreender as diferentes opções disponíveis para a criação de máquinas virtuais no Azure.
+* Aplicar o processo passo a passo para criar uma máquina virtual através do portal do Azure.
+* Configurar opções de disponibilidade para aumentar a resiliência das VMs.
+* Entender e configurar o dimensionamento automático para adaptar a capacidade da VM à demanda.
+* Avaliar as vantagens e desvantagens do uso de instâncias Spot para otimizar custos em ambientes não produtivos.
+* Selecionar o tamanho e o tipo de máquina virtual adequados com base nos requisitos de carga de trabalho.
+* Configurar a rede virtual e as regras de firewall para garantir a conectividade e a segurança da VM.
+* Implementar práticas de gerenciamento e monitoramento para manter a saúde e a segurança da VM.
+* Explorar brevemente a criação de aplicativos de função para automação no Azure.
+
+## Criação de Máquinas Virtuais no Azure
+
+O processo de criação de uma nova máquina virtual no Azure oferece flexibilidade através de configurações pré-definidas e personalizadas. É possível escolher ambientes otimizados para teste ou produção. O sistema também auxilia na seleção do tipo de máquina, sugerindo configurações baseadas em necessidades específicas de carga de trabalho, como otimização para memória ou CPU.
+
+Os passos essenciais para a criação de uma VM incluem:
+
+1.  **Seleção da Assinatura:** Escolher a assinatura da Azure onde a VM será provisionada.
+2.  **Seleção do Grupo de Recursos:** Associar a VM a um grupo de recursos existente ou criar um novo para organização.
+3.  **Definição do Nome da Máquina Virtual:** Atribuir um nome único e descritivo à VM.
+4.  **Configuração de Região:** Escolher a localização geográfica do data center onde a VM será hospedada.
+5.  **Opções de Disponibilidade:** Configurar zonas de disponibilidade ou conjuntos de disponibilidade para aumentar a resiliência.
+
+## Configurações de Disponibilidade e Dimensionamento
+
+* **Zonas de Disponibilidade:** Permitem distribuir as instâncias da VM em diferentes data centers dentro de uma região, oferecendo proteção contra falhas em um data center específico.
+* **Dimensionamento Automático:** Ajusta dinamicamente o número de instâncias da VM com base na carga de trabalho (por exemplo, uso da CPU). É possível definir limites mínimos e máximos para o número de instâncias, garantindo a escalabilidade e otimização de custos.
+
+## Estratégias de Custo e Uso de Instâncias Spot
+
+As **instâncias Spot** representam uma forma econômica de utilizar a capacidade não utilizada do Azure, com descontos significativos. No entanto, essas instâncias podem ser interrompidas se a Azure precisar da capacidade de volta e um usuário pagar o preço normal. Portanto, são ideais para ambientes de desenvolvimento, teste ou cargas de trabalho tolerantes a interrupções, mas não recomendadas para produção.
+
+## Seleção de Tamanho e Tipo de Máquina
+
+A escolha do tamanho da máquina virtual é crucial e deve considerar os requisitos de CPU, memória RAM e armazenamento da carga de trabalho. O Azure oferece diversas **famílias de máquinas** otimizadas para diferentes tipos de tarefas (computação intensiva, memória intensiva, armazenamento otimizado, etc.), com diferentes níveis de desempenho e custos associados. A seleção deve equilibrar as necessidades técnicas com o orçamento disponível.
+
+## Configuração de Rede e Segurança
+
+A configuração da rede virtual é um passo fundamental durante a criação da VM. É possível criar uma nova rede virtual ou selecionar uma existente. A configuração das **portas de entrada** (regras de firewall) é essencial para a segurança, permitindo apenas o tráfego de rede necessário para a comunicação com a VM (por exemplo, porta 22 para SSH em Linux, porta 3389 para RDP em Windows).
+
+## Gerenciamento e Monitoramento
+
+O gerenciamento da máquina virtual abrange diversas configurações importantes:
+
+* **Identidade:** Configurar a autenticação para acessar a VM (por exemplo, chaves SSH para Linux, senha para Windows).
+* **Desligamento Automático:** Agendar o desligamento automático da VM para otimizar custos em ambientes não produtivos.
+* **Backup:** Habilitar e configurar backups regulares para proteger os dados da VM contra perdas.
+* **Monitoramento:** Configurar métricas e alertas para acompanhar o desempenho (CPU, memória, disco, rede) e a integridade da VM, permitindo a detecção proativa de problemas.
+
+## Criação de Aplicativos de Função
+
+Embora não seja o foco principal deste laboratório, o vídeo também mencionou a criação de **Aplicativos de Função** (Azure Functions), um serviço serverless que permite executar código sob demanda sem a necessidade de gerenciar infraestrutura. A criação de Function Apps envolve a seleção de uma pilha de runtime (Windows ou Linux) dependendo da linguagem de programação ou do tipo de contêiner utilizado.
+
 
 ## Anotações e Dicas
 
